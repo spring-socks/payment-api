@@ -1,0 +1,10 @@
+version: "2"
+services:
+  payment-db:
+    image: bitnami/postgresql:14
+    ports:
+    - "25432:5432"
+    environment:
+      POSTGRES_DB: payment
+      POSTGRES_USER: socks
+      POSTGRES_PASSWORD: socks
